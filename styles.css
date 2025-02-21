@@ -1,0 +1,94 @@
+/* General Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Verdana', sans-serif;
+    background: linear-gradient(to bottom, #f8bbd0, #fce4ec); /* Soft pink gradient background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Light white background with opacity for a soft effect */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 38px;
+    color: #ff4081; /* Bright pink color */
+    margin-bottom: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cute font */
+}
+
+hr {
+    margin-bottom: 20px;
+    border: 1px solid #ff80ab; /* Pinkish color */
+}
+
+label {
+    font-size: 18px;
+    color: #ff4081; /* Matching color */
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input.form-control {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ff80ab; /* Light pink border */
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: border 0.3s ease;
+}
+
+input.form-control:focus {
+    border-color: #ff4081; /* Bright pink when focused */
+    outline: none;
+}
+
+button {
+    width: 48%;
+    padding: 12px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-danger {
+    background-color: #ff4081; /* Soft pink button */
+    margin-right: 4%;
+}
+
+button.btn-danger:hover {
+    background-color: #f50057; /* Darker pink on hover */
+}
+
+#guestName {
+    font-size: 20px;
+    color: #ff4081; /* Matching color for text */
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+   

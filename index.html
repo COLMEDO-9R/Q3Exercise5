@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCISE 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h1>GREETING APP</h1><hr>
+
+        <!-- ONTOGGLE EVENT -->
+        <details ontoggle="alert('The ontoggle event just got triggered')">
+            <summary>
+                INSTRUCTIONS
+            </summary>
+
+            <P>
+                Enter your first name.
+            </P>
+        </details>
+
+        <form>
+            <label for="fname">Enter name: </label>
+            <input type="text" id="fname" class="form-control" onkeydown="Myname()">
+
+            <p></p>
+            <h5 id="guestName">Welcome everyone :D</h5>
+
+            <button type="button" class="btn btn-danger" onclick="greet()">Greet</button>
+            <button type="button" class="btn btn-danger"onclick="window.location.reload();" Id="refresh" onmouseover="changeTextcolor()" onmouseout="resetTextColor()">Refresh</button>
+        </form>
+
+        <script type="text/javascript">
+            function greet(){
+                var name = document.getElementById('fname').value;
+
+                document.getElementById('guestName').innerHTML = 'Welcome, ' + name;
+            }
+
+
+
+        </script>
+
+        <script>
+            document.getElementById("fname").onchange = function() {Myname()};
+
+            function Myname() {
+                var name = document.getElementById("fname");
+                name.value = name.value.toUpperCase();
+                document.getElementById("demo").innerHTML = "You pressed a key inside the input field";
+
+            }
+        </script>
+
+        <!-- CHANGE TEXT & BACKGROUND COLOR OF A BUTTON -->
+        <script>
+            const reload = document.getElementById('refresh');
+
+            function changeTextColor(){
+                reload.style.color = "#ff0080";
+                reload.style.background = "white";
+            }
+
+            function resetTextColor(){
+                reload.style.color = "white";
+                reload.stye.background = "#ff0080";
+            }
+        </script>
+
+        <footer></footer>
+        <div class="footer">
+            <hr><p>&#169;AY 2025 | ICT 9-RUBY | Exercise 3: Functions | Cerinne Kimberlee S. Olmedo | <a href="https://colmedo-9r.github.io/Exercise2/" target="_blank" class="text-black">Visit Source :D </a></p>
+    </div>
+</div>
+
+</body>
+</html>
